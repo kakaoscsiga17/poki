@@ -1,5 +1,5 @@
 h1 {
-  color: red;
+  color: rgb(147, 13, 242);
 }
 
 .kartya {
@@ -16,7 +16,8 @@ h1 {
   background-position: center;
 }
 
-#container {
+#container,
+#masikhely {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -28,4 +29,29 @@ h1 {
   width: 90%;
   margin: auto;
   text-align: center;
+}
+.kartya {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.kartya.selected {
+  border-color: red;
+  transform: scale(1.1);
+}
+.kartya.selected {
+  background-color: rgb(89, 255, 0);
+  border-color: red;
+  transform: scale(1.1);
+}
+body {
+  background-color: lightgreen;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Pok%C3%A9mon_GO_logo.svg/1200px-Pok%C3%A9mon_GO_logo.svg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
